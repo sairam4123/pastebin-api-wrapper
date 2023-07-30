@@ -12,5 +12,6 @@ func _ready():
 	var pastes = await PastebinAPI.my_pastes()
 	for paste in pastes:
 		print(await PastebinAPI.get_private_paste_raw(paste["paste_key"]))
+	
 #	await PastebinAPI.delete_paste("Hfatje51")
 #	await PastebinAPI.paste("test.json", content)
